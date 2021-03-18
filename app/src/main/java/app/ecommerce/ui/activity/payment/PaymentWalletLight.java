@@ -1,0 +1,41 @@
+package app.ecommerce.ui.activity.payment;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
+import android.os.Bundle;
+import android.view.MenuItem;
+import android.widget.Toast;
+
+import app.ecommerce.ui.R;
+import app.ecommerce.ui.utils.Tools;
+
+public class PaymentWalletLight extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_payment_wallet_light);
+        initToolbar();
+    }
+
+    private void initToolbar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_keyboard_arrow_dark);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("USDT");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Tools.setSystemBarColor(this,R.color.white);
+        Tools.setSystemBarLight(this);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+        } else {
+            Toast.makeText(getApplicationContext(), item.getTitle() + " clicked", Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+}

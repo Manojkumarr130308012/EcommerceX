@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_foryou"
+        android:icon="@drawable/ic_favorite"
+        android:title="For You" />
+
+    <item
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/ic_chat"
+        android:title="Message" />
+
+    <item
+        android:id="@+id/navigation_whistlist"
+        android:icon="@drawable/ic_list"
+        android:title="Whistlist"/>
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/ic_account_circle"
+        android:title="Account"/>
+
+</menu>

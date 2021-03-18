@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="Subheader">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_home"
+                    android:title="Home" />
+                <item
+                    android:id="@+id/nav_account"
+                    android:icon="@drawable/ic_account_circle"
+                    android:title="My account" />
+            </group>
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/grp_5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_orders"
+            android:title="My orders"
+            app:actionLayout="@layout/badge_navigation_colored" />
+        <item
+            android:id="@+id/nav_shocking_card"
+            android:title="My shocking card"
+            app:actionLayout="@layout/badge_navigation_plain" />
+    </group>
+
+    <item android:title="Subheader">
+        <menu>
+            <group
+                android:id="@+id/grp_3"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_shopping_cart"
+                    android:icon="@drawable/ic_shopping_cart"
+                    android:title="Shopping cart" />
+                <item
+                    android:id="@+id/nav_favorite"
+                    android:icon="@drawable/ic_star"
+                    android:title="My favorite" />
+                <item
+                    android:id="@+id/nav_orders2"
+                    android:icon="@drawable/ic_assignment"
+                    android:title="My orders" />
+                <item
+                    android:id="@+id/nav_shopping_cart2"
+                    android:icon="@drawable/ic_shopping_basket"
+                    android:title="Shopping cart" />
+                <item
+                    android:id="@+id/nav_favorite2"
+                    android:icon="@drawable/ic_favorite"
+                    android:title="My favorite" />
+                <item
+                    android:id="@+id/nav_wallet"
+                    android:icon="@drawable/ic_wallet"
+                    android:title="My wallet" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E2FFEE"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:srcCompat="@drawable/ic_close"
+        app:tint="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerHorizontal="true"
+                app:cardCornerRadius="48dp"
+                app:cardElevation="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/user_profile_photo"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_below="@+id/login_title"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/background_profile">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/shape_round_green" />
+
+                    <ImageView
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_lock_outline"
+                        app:tint="@color/white" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="45dp"
+                android:background="@android:color/white"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/spacing_xxxlarge" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/spacing_large"
+                            android:gravity="center"
+                            android:text="OTP Authentication"
+                            android:textColor="@android:color/black"
+                            android:textSize="19sp" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/spacing_large" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/spacing_large"
+                            android:gravity="center"
+                            android:text="An authentication code has sent to\n(+84)999 999 999"
+                            android:textColor="@color/grey_40" />
+
+                        <View
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/spacing_large" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_mlarge" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <EditText
+                                android:id="@+id/et1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@color/grey_5"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:maxLength="1" />
+
+                            <Space
+                                android:layout_width="10dp"
+                                android:layout_height="0dp" />
+
+                            <EditText
+                                android:id="@+id/et2"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@color/grey_5"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:maxLength="1" />
+
+                            <Space
+                                android:layout_width="10dp"
+                                android:layout_height="0dp" />
+
+                            <EditText
+                                android:id="@+id/et3"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@color/grey_5"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:maxLength="1" />
+
+                            <Space
+                                android:layout_width="10dp"
+                                android:layout_height="0dp" />
+
+                            <EditText
+                                android:id="@+id/et4"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:background="@color/grey_5"
+                                android:gravity="center"
+                                android:inputType="phone"
+                                android:maxLength="1" />
+
+
+                        </LinearLayout>
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/spacing_large" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_middle"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="I don't recieve code  " />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Resend Code"
+                                android:textColor="#00875A" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/spacing_large"
+                            android:layout_marginTop="@dimen/spacing_middle"
+                            android:layout_marginEnd="@dimen/spacing_large"
+                            android:layout_marginBottom="@dimen/spacing_middle"
+                            app:cardBackgroundColor="#00875A"
+                            app:cardCornerRadius="25dp"
+                            app:cardElevation="2dp">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                style="@style/RippleStyleWhite"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:paddingStart="@dimen/spacing_large"
+                                    android:paddingTop="@dimen/spacing_large"
+                                    android:paddingEnd="@dimen/spacing_large"
+                                    android:paddingBottom="@dimen/spacing_large">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/transparent"
+                                        android:gravity="center_horizontal"
+                                        android:text="Next"
+                                        android:textAlignment="center"
+                                        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+                                        android:textColor="@color/overlay_light_90"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/spacing_middle"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="By Signing up, you agree to our" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Terms and Conditions"
+                                android:textColor="#00875A" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

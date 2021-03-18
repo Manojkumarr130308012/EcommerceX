@@ -1,0 +1,1614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F6"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D44334"
+        android:theme="@style/White.AppTheme"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/Toolbar.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginEnd="@dimen/spacing_large"
+                android:layout_marginRight="@dimen/spacing_large"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="COCO Ecommerce"
+                    android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mlarge" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginStart="@dimen/spacing_large">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="290dp"
+                        android:layout_height="170dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="6dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/banner1" />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="@dimen/spacing_middle"
+                        android:layout_height="0dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="290dp"
+                        android:layout_height="170dp"
+                        app:cardCornerRadius="5dp">
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:cardCornerRadius="6dp">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/banner2" />
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="@dimen/spacing_smlarge"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/spacing_middle"
+                        android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/simpleButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@drawable/tab_rounded_coco"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="All Category"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@drawable/tab_rounded_coco"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="Mans"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@drawable/tab_rounded_coco"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="Womens"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@android:color/white" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:background="@drawable/tab_rounded_coco"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="Electronic"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@android:color/white" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_middle"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/spacing_mlarge"
+                android:paddingRight="@dimen/spacing_mlarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Top rated Products"
+                    android:textColor="@color/grey_80"
+                    android:textAppearance="@style/TextAppearance.Subhead.Bold"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View More"
+                    android:textStyle="bold"
+                    android:textColor="#E55C4F"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_smlarge"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/spacing_medium"
+                        android:layout_height="0dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="5dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp">
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:clickable="true"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="150dp"
+                                    android:scaleType="centerCrop"
+                                    app:srcCompat="@drawable/electronic_1" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/spacing_medium" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <View
+                                        android:layout_width="@dimen/spacing_middle"
+                                        android:layout_height="0dp" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="2"
+                                        android:layout_marginTop="@dimen/spacing_xmedium"
+                                        android:text="JBL Boombox speaker portable"
+                                        android:maxLines="2"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                        android:textColor="@android:color/black" />
+
+                                    <ImageButton
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/spacing_xlarge"
+                                        android:background="?attr/selectableItemBackgroundBorderless"
+                                        app:tint="@color/grey_40"
+                                        app:srcCompat="@drawable/ic_more_vert" />
+
+                                    <View
+                                        android:layout_width="@dimen/spacing_small"
+                                        android:layout_height="0dp" />
+
+                                </LinearLayout>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="@dimen/spacing_medium"
+                                    android:text="JBL Indonesia"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                    android:textColor="@color/grey_60"
+                                    android:layout_marginStart="10dp" />
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/spacing_medium" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <LinearLayout
+                                        android:orientation="horizontal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="10dp"
+                                            android:text="4.6"
+                                            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                            android:textColor="@color/grey_60"
+                                            android:layout_marginStart="10dp" />
+                                        <ImageView
+                                            app:tint="@color/grey_60"
+                                            app:srcCompat="@drawable/ic_star"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="3dp"
+                                            android:layout_width="15dp"
+                                            android:layout_height="15dp"
+                                            android:layout_marginStart="3dp" />
+                                    </LinearLayout>
+
+
+
+
+                                    <View
+                                        android:layout_width="0dp"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="1" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="$288"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                        android:textColor="#E55C4F"
+                                        android:textStyle="bold" />
+
+                                    <View
+                                        android:layout_width="@dimen/spacing_middle"
+                                        android:layout_height="0dp" />
+
+                                </LinearLayout>
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="@dimen/spacing_middle" />
+
+                            </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="5dp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="5dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/electronic_2" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:layout_marginTop="@dimen/spacing_xmedium"
+                                    android:text="JBL Boombox speaker portable"
+                                    android:maxLines="2"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textColor="@android:color/black" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/spacing_xlarge"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    app:tint="@color/grey_40"
+                                    app:srcCompat="@drawable/ic_more_vert" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_small"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="@dimen/spacing_medium"
+                                android:text="JBL Indonesia"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_60"
+                                android:layout_marginStart="10dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="4.6"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_60"
+                                        android:layout_marginStart="10dp" />
+                                    <ImageView
+                                        app:tint="@color/grey_60"
+                                        app:srcCompat="@drawable/ic_star"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="3dp" />
+                                </LinearLayout>
+
+
+
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$389"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="#E55C4F"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <View
+                        android:layout_width="@dimen/spacing_medium"
+                        android:layout_height="0dp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="5dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/electronic_3" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:layout_marginTop="@dimen/spacing_xmedium"
+                                    android:text="JBL Boombox speaker portable"
+                                    android:maxLines="2"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textColor="@android:color/black" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/spacing_xlarge"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    app:tint="@color/grey_40"
+                                    app:srcCompat="@drawable/ic_more_vert" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_small"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="@dimen/spacing_medium"
+                                android:text="JBL Indonesia"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_60"
+                                android:layout_marginStart="10dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="4.6"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_60"
+                                        android:layout_marginStart="10dp" />
+                                    <ImageView
+                                        app:tint="@color/grey_60"
+                                        app:srcCompat="@drawable/ic_star"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="3dp" />
+                                </LinearLayout>
+
+
+
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$189"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="#E55C4F"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="@dimen/spacing_smlarge"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/spacing_mlarge"
+                android:paddingRight="@dimen/spacing_mlarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="You may Like"
+                    android:textColor="@color/grey_80"
+                    android:textAppearance="@style/TextAppearance.Subhead.Bold"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View More"
+                    android:textStyle="bold"
+                    android:textColor="#E55C4F"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_smlarge"
+                android:layout_marginBottom="@dimen/spacing_smlarge"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/spacing_medium"
+                        android:layout_height="0dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="5dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/laptop1" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:layout_marginTop="@dimen/spacing_xmedium"
+                                    android:text="Microsoft Surface Laptop"
+                                    android:maxLines="2"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textColor="@android:color/black" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/spacing_xlarge"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    app:tint="@color/grey_40"
+                                    app:srcCompat="@drawable/ic_more_vert" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_small"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="@dimen/spacing_medium"
+                                android:text="Microsoft Store"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_60"
+                                android:layout_marginStart="10dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="4.6"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_60"
+                                        android:layout_marginStart="10dp" />
+                                    <ImageView
+                                        app:tint="@color/grey_60"
+                                        app:srcCompat="@drawable/ic_star"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="3dp" />
+                                </LinearLayout>
+
+
+
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$1288"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="#E55C4F"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="5dp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="5dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="fitCenter"
+                                app:srcCompat="@drawable/laptop4" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:layout_marginTop="@dimen/spacing_xmedium"
+                                    android:text="Asus VivoBook A409"
+                                    android:maxLines="2"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textColor="@android:color/black" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/spacing_xlarge"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    app:tint="@color/grey_40"
+                                    app:srcCompat="@drawable/ic_more_vert" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_small"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="@dimen/spacing_medium"
+                                android:text="Asus Store"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_60"
+                                android:layout_marginStart="10dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="4.6"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_60"
+                                        android:layout_marginStart="10dp" />
+                                    <ImageView
+                                        app:tint="@color/grey_60"
+                                        app:srcCompat="@drawable/ic_star"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="3dp" />
+                                </LinearLayout>
+
+
+
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$2288"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="#E55C4F"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <View
+                        android:layout_width="@dimen/spacing_medium"
+                        android:layout_height="0dp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="5dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/electronic_1" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:layout_marginTop="@dimen/spacing_xmedium"
+                                    android:text="JBL Boombox speaker portable"
+                                    android:maxLines="2"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textColor="@android:color/black" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/spacing_xlarge"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    app:tint="@color/grey_40"
+                                    app:srcCompat="@drawable/ic_more_vert" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_small"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="@dimen/spacing_medium"
+                                android:text="JBL Indonesia"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_60"
+                                android:layout_marginStart="10dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="4.6"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_60"
+                                        android:layout_marginStart="10dp" />
+                                    <ImageView
+                                        app:tint="@color/grey_60"
+                                        app:srcCompat="@drawable/ic_star"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="3dp" />
+                                </LinearLayout>
+
+
+
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$288"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="#E55C4F"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="@dimen/spacing_smlarge"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+
+            <ImageView
+                android:src="@drawable/banner2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:contentDescription="TODO" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_mlarge" />
+
+            <LinearLayout
+                android:paddingLeft="@dimen/spacing_mlarge"
+                android:paddingRight="@dimen/spacing_mlarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recently Viewed"
+                    android:textColor="@color/grey_80"
+                    android:textAppearance="@style/TextAppearance.Subhead.Bold"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View All"
+                    android:textStyle="bold"
+                    android:textColor="#E55C4F"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_smlarge"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/spacing_medium"
+                        android:layout_height="0dp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="5dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/electronic_1" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:layout_marginTop="@dimen/spacing_xmedium"
+                                    android:text="JBL Boombox speaker portable"
+                                    android:maxLines="2"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textColor="@android:color/black" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/spacing_xlarge"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    app:tint="@color/grey_40"
+                                    app:srcCompat="@drawable/ic_more_vert" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_small"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="@dimen/spacing_medium"
+                                android:text="JBL Indonesia"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_60"
+                                android:layout_marginStart="10dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="4.6"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_60"
+                                        android:layout_marginStart="10dp" />
+                                    <ImageView
+                                        app:tint="@color/grey_60"
+                                        app:srcCompat="@drawable/ic_star"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="3dp" />
+                                </LinearLayout>
+
+
+
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$288"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="#E55C4F"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="5dp"
+                        android:layout_height="5dp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="5dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/electronic_2" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:layout_marginTop="@dimen/spacing_xmedium"
+                                    android:text="JBL Boombox speaker portable"
+                                    android:maxLines="2"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textColor="@android:color/black" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/spacing_xlarge"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    app:tint="@color/grey_40"
+                                    app:srcCompat="@drawable/ic_more_vert" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_small"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="@dimen/spacing_medium"
+                                android:text="JBL Indonesia"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_60"
+                                android:layout_marginStart="10dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="4.6"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_60"
+                                        android:layout_marginStart="10dp" />
+                                    <ImageView
+                                        app:tint="@color/grey_60"
+                                        app:srcCompat="@drawable/ic_star"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="3dp" />
+                                </LinearLayout>
+
+
+
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$389"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="#E55C4F"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <View
+                        android:layout_width="@dimen/spacing_medium"
+                        android:layout_height="0dp" />
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_margin="5dp"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="@android:color/white"
+                        app:cardCornerRadius="2dp"
+                        app:cardElevation="2dp">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="true"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                                android:scaleType="centerCrop"
+                                app:srcCompat="@drawable/electronic_3" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="2"
+                                    android:layout_marginTop="@dimen/spacing_xmedium"
+                                    android:text="JBL Boombox speaker portable"
+                                    android:maxLines="2"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                                    android:textColor="@android:color/black" />
+
+                                <ImageButton
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="@dimen/spacing_xlarge"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    app:tint="@color/grey_40"
+                                    app:srcCompat="@drawable/ic_more_vert" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_small"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="@dimen/spacing_medium"
+                                android:text="JBL Indonesia"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                android:textColor="@color/grey_60"
+                                android:layout_marginStart="10dp" />
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_medium" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:text="4.6"
+                                        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+                                        android:textColor="@color/grey_60"
+                                        android:layout_marginStart="10dp" />
+                                    <ImageView
+                                        app:tint="@color/grey_60"
+                                        app:srcCompat="@drawable/ic_star"
+                                        android:layout_gravity="center"
+                                        android:layout_marginLeft="3dp"
+                                        android:layout_width="15dp"
+                                        android:layout_height="15dp"
+                                        android:layout_marginStart="3dp" />
+                                </LinearLayout>
+
+
+
+
+                                <View
+                                    android:layout_width="0dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="1" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="$189"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                                    android:textColor="#E55C4F"
+                                    android:textStyle="bold" />
+
+                                <View
+                                    android:layout_width="@dimen/spacing_middle"
+                                    android:layout_height="0dp" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/spacing_middle" />
+
+                        </LinearLayout>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_width="@dimen/spacing_smlarge"
+                        android:layout_height="0dp" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/spacing_large" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

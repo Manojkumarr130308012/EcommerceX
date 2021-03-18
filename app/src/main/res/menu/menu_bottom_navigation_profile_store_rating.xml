@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_1"
+        android:icon="@drawable/ic_baseline_event_note_24"
+        android:title="REQUEST" />
+
+    <item
+        android:id="@+id/navigation_5"
+        android:icon="@drawable/ic_notifications"
+        android:title="NOTIFICATION" />
+
+    <item
+        android:id="@+id/navigation_4"
+        android:icon="@drawable/ic_favorite"
+        android:title="REVIEWS" />
+
+    <item
+        android:id="@+id/navigation_3"
+        android:icon="@drawable/ic_person"
+        android:checked="true"
+        android:title="ACCOUNT" />
+
+    <item
+        android:id="@+id/navigation_2"
+        android:icon="@drawable/ic_baseline_forum_24"
+        android:title="CHATS" />
+
+
+
+</menu>

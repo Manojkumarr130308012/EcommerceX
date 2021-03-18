@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_10"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dp"
+            android:padding="@dimen/spacing_large"
+            app:titleTextColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Find Your"
+                        android:textColor="@color/grey_60"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="Specialist"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:textColor="@color/grey_80" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/grey_80"
+                        app:srcCompat="@drawable/ic_search" />
+
+                    <View
+                        android:layout_width="@dimen/spacing_large"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:tint="@color/grey_80"
+                        app:srcCompat="@drawable/ic_chat_bubble" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_5"
+        android:clipToPadding="false"
+        android:scrollbars="none"
+        android:scrollingCache="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/spacing_medium"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/spacing_xxxllarge">
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/myviewpager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/spacing_large"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Categories"
+                        android:textAppearance="@style/TextAppearance.Subhead.Bold"
+                        android:textColor="@color/grey_80" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See All"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grey_60" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_medium" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_margin="@dimen/spacing_medium"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="4dp"
+                            app:cardElevation="2dp">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                style="@style/RippleStyleBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="55dp"
+                                        app:tint="@color/blue_800"
+                                        app:srcCompat="@drawable/ic_accessibility" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Pedistrician" />
+
+
+                                </LinearLayout>
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_margin="@dimen/spacing_medium"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="4dp"
+                            app:cardElevation="2dp">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                style="@style/RippleStyleBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="55dp"
+                                        app:tint="@color/blue_800"
+                                        app:srcCompat="@drawable/ic_accessible" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Cardiologist" />
+
+
+                                </LinearLayout>
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_margin="@dimen/spacing_medium"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="4dp"
+                            app:cardElevation="2dp">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                style="@style/RippleStyleBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="55dp"
+                                        app:tint="@color/blue_800"
+                                        app:srcCompat="@drawable/ic_airline_seat" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Neurogeneon" />
+
+
+                                </LinearLayout>
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_margin="@dimen/spacing_medium"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="4dp"
+                            app:cardElevation="2dp">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                style="@style/RippleStyleBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="55dp"
+                                        app:tint="@color/blue_800"
+                                        app:srcCompat="@drawable/ic_hospital" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Hospitals" />
+
+
+                                </LinearLayout>
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:layout_margin="@dimen/spacing_medium"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="4dp"
+                            app:cardElevation="2dp">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                style="@style/RippleStyleBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="true"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <ImageView
+                                        android:layout_width="30dp"
+                                        android:layout_height="55dp"
+                                        app:tint="@color/blue_800"
+                                        app:srcCompat="@drawable/ic_favorite" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Heart" />
+
+                                </LinearLayout>
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spacing_large" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/spacing_large">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/spacing_large"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Most Popular"
+                        android:textAppearance="@style/TextAppearance.Subhead.Bold"
+                        android:textColor="@color/grey_80" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="See All"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="@color/grey_60" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/spacing_medium" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_medium"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="4dp"
+                            app:cardElevation="2dp">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                style="@style/RippleStyleBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/spacing_large">
+
+                                    <LinearLayout
+                                        android:id="@+id/detail_layout1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Dr. Saina Zaman"
+                                            android:textAppearance="@style/TextAppearance.Medium.Bold" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Medicine Specialist" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <androidx.appcompat.widget.AppCompatRatingBar
+                                            style="@style/Widget.AppCompat.RatingBar.Small"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:rating="4.5" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Experience" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="5 Years"
+                                            android:textAppearance="@style/TextAppearance.Medium.Bold"
+                                            android:textSize="14sp" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Patients" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1.09K"
+                                            android:textAppearance="@style/TextAppearance.Medium.Bold"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="100dp"
+                                        android:layout_alignEnd="@id/detail_layout1"
+                                        android:layout_alignRight="@id/detail_layout1"
+                                        android:layout_alignBottom="@id/detail_layout1"
+                                        android:layout_weight="2"
+                                        android:src="@drawable/doctor1" />
+
+                                </RelativeLayout>
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/spacing_medium"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardCornerRadius="4dp"
+                            app:cardElevation="2dp">
+
+                            <com.balysv.materialripple.MaterialRippleLayout
+                                style="@style/RippleStyleBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="true"
+                                    android:orientation="horizontal"
+                                    android:padding="@dimen/spacing_large">
+
+                                    <LinearLayout
+                                        android:id="@+id/detail_layout"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Dr. Serena Gomez"
+                                            android:textAppearance="@style/TextAppearance.Medium.Bold" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Medicine Specialist" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <androidx.appcompat.widget.AppCompatRatingBar
+                                            style="@style/Widget.AppCompat.RatingBar.Small"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:rating="4.5" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Experience" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="5 Years"
+                                            android:textAppearance="@style/TextAppearance.Medium.Bold"
+                                            android:textSize="14sp" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="Patients" />
+
+                                        <View
+                                            android:layout_width="match_parent"
+                                            android:layout_height="@dimen/spacing_medium" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="1.09K"
+                                            android:textAppearance="@style/TextAppearance.Medium.Bold"
+                                            android:textSize="14sp" />
+
+                                    </LinearLayout>
+
+                                    <ImageView
+                                        android:layout_width="60dp"
+                                        android:layout_height="100dp"
+                                        android:layout_alignEnd="@id/detail_layout"
+                                        android:layout_alignRight="@id/detail_layout"
+                                        android:layout_alignBottom="@id/detail_layout"
+                                        android:layout_weight="2"
+                                        android:src="@drawable/doctor2" />
+
+                                </RelativeLayout>
+
+                            </com.balysv.materialripple.MaterialRippleLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="@dimen/spacing_large"
+                            android:layout_height="0dp" />
+
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"
+                app:itemIconTint="@color/color_state_primary_2"
+                app:itemTextColor="@color/color_state_primary_2"
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/menu_bottom_navigation_profile" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

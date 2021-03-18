@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_all_inbox"
+            android:icon="@drawable/ic_offer"
+            android:title="Super deals for you" />
+    </group>
+
+    <item android:title="Subheader">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home"
+                    android:icon="@drawable/ic_home"
+                    android:title="Home" />
+                <item
+                    android:id="@+id/nav_account"
+                    android:icon="@drawable/ic_account_circle"
+                    android:title="My account" />
+                <item
+                    android:id="@+id/nav_orders"
+                    android:icon="@drawable/ic_assignment"
+                    android:title="My orders" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Subheader">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_shopping_cart"
+                    android:icon="@drawable/ic_shopping_cart"
+                    android:title="Shopping cart" />
+                <item
+                    android:id="@+id/nav_favorite"
+                    android:icon="@drawable/ic_star"
+                    android:title="My favorite" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Subheader">
+        <menu>
+            <group
+                android:id="@+id/grp_3"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_home2"
+                    android:icon="@drawable/ic_home"
+                    android:title="Home" />
+                <item
+                    android:id="@+id/nav_account2"
+                    android:icon="@drawable/ic_account_circle"
+                    android:title="My account" />
+                <item
+                    android:id="@+id/nav_orders2"
+                    android:icon="@drawable/ic_assignment"
+                    android:title="My orders" />
+                <item
+                    android:id="@+id/nav_shopping_cart2"
+                    android:icon="@drawable/ic_shopping_basket"
+                    android:title="Shopping cart" />
+                <item
+                    android:id="@+id/nav_favorite2"
+                    android:icon="@drawable/ic_favorite"
+                    android:title="My favorite" />
+                <item
+                    android:id="@+id/nav_wallet"
+                    android:icon="@drawable/ic_wallet"
+                    android:title="My wallet" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>
